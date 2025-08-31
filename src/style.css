@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.information {
+  text-align: center;
+}
+
+.information p {
+  margin: 0.25rem 0;
+}
+
+.acordeon {
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: #55569E;
+  border-color: #55569E;
+}
+
+.acordeon .trigger {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acordeon .trigger::after {
+  content: '▼';
+  font-size: 1.5rem;
+  transition: transform 0.25s ease;
+}
+
+.acordeon.open .trigger::after {
+  transform: rotate(180deg);
+}
+
+.acordeon .content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.25s ease;
+  padding: 0 2rem;
+}
+
+.acordeon.open .content {
+  max-height: 1000px;
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills section {
+  flex: 1 1 45%;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 0.5rem;
+}
+
+.languages {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.languages li {
+  background-color: #7777cc;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.portfolio,
+.experience {
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio li,
+.experience li {
+  margin-bottom: 1rem;
+}
+
+.portfolio li .title,
+.experience li .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience li .period {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}

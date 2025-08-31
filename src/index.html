@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Venilton FalvoJr</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    
+    <main class="main">
+
+    <header class="header">
+      <img src="./mano-foto.jpg" alt="Foto de Manoel" class="photo" />
+
+      <h1 class="title">
+        Olá, <br />
+        eu sou <span id="nome"></span>
+      </h1>
+
+      <div class="information">
+        <p class="job" id="titulo"></p>
+        <p class="location" id="localidade"></p>
+        <p class="phone"><a id="telefone" href=""></a></p>
+        <p class="email"><a id="email" href=""></a></p>
+      </div>
+    </header>
+
+    <section class="acordeon open">
+      <button class="trigger" type="button">
+        <h2>Skills</h2>
+      </button>
+      <div class="content">
+        <div class="skills">
+          <section class="tools">
+            <h3>Hard Skills:</h3>
+            <ul id="hardSkillsList"></ul>
+          </section>
+
+          <section class="personal">
+            <h3>Soft Skills:</h3>
+            <ul id="softSkillsList"></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Idiomas</h2>
+      </button>
+      <div class="content">
+        <ul class="languages" id="idiomasList"></ul>
+      </div>
+    </section>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Portfólio</h2>
+      </button>
+      <div class="content">
+        <ul class="portfolio" id="portfolioList"></ul>
+      </div>
+    </section>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Experiência Profissional</h2>
+      </button>
+      <div class="content">
+        <ul class="experience" id="experienceList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
